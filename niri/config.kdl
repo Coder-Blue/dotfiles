@@ -64,6 +64,8 @@ output "eDP-1" {
 
     transform "normal"
 
+    mode "2880x1800@120.000"
+
     // background-color "#303446"
 
     position x=1280 y=0
@@ -157,10 +159,11 @@ binds {
 
     Mod+Return { spawn "ghostty"; }
     Mod+A { spawn "rofi" "-show" "drun" "-config" "~/.config/rofi/sway.rasi"; }
-    Mod+F {spawn "flatpak" "run" "app.zen_browser.zen";}
-    Mod+D {spawn "flatpak" "run" "com.discordapp.Discord";}
-    Mod+E {spawn "ghostty" "-e" "yazi";}
-    Mod+B {spawn "~/.config/waybar/launch.sh"; }
+    Mod+F { spawn "flatpak" "run" "app.zen_browser.zen" ;}
+    Mod+D { spawn "flatpak" "run" "com.discordapp.Discord" ;}
+    Mod+E { spawn "ghostty" "-e" "yazi";}
+    Mod+B { spawn "~/.config/waybar/launch.sh"; }
+    Mod+S { spawn "flatpak" "run" "com.spotify.Client"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
