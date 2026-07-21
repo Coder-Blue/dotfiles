@@ -1,0 +1,7 @@
+font-family = JetBrains Mono
+font-size = 15
+theme = catppuccin-mocha
+background-opacity = 0.95
+scrollbar = never
+copy-on-select = false
+command = tmux new-session -A -s main
