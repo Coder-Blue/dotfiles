@@ -9,3 +9,20 @@ show_symlink = true
 edit = [
   {run = 'nvim $@', block = true, for = 'unix'}
 ]
+
+image = [
+  {run = 'imv $@', desc = "Open with imv", orphan=true}
+]
+
+video = [
+  {run = 'mpv $@', desc = "Open with mpv", orphan=true}
+]
+
+[open]
+
+prepend_rules = [
+  {mime = "video/mp4", use = "video"},
+  {mime = "video/x-matroska", use = "video"},
+  {mime = "video/*", use = "video"},
+  {mime = "image/*", use = "image"},
+]
