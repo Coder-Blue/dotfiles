@@ -1,6 +1,8 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
     starship init fish | source
+    
+    set -g direnv_fish_mode eval_after_arrow
+    direnv hook fish | source
 end
 
 set -gx GTK_IM_MODULE fcitx
