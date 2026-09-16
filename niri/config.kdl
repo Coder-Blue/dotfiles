@@ -158,7 +158,7 @@ binds {
     Mod+Return { spawn "ghostty"; }
     Mod+A { spawn "rofi" "-show" "drun" "-config" "~/.config/rofi/sway.rasi"; }
     Mod+F { spawn "flatpak" "run" "app.zen_browser.zen" ;}
-    Mod+D { spawn "flatpak" "run" "com.discordapp.Discord" ;}
+    Mod+D { spawn "flatpak" "run" "dev.vencord.Vesktop" ;}
     Mod+E { spawn "ghostty" "-e" "yazi";}
     Mod+B { spawn "~/.config/waybar/launch.sh"; }
     Mod+S { spawn "flatpak" "run" "com.spotify.Client"; }
