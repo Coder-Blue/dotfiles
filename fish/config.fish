@@ -10,7 +10,7 @@ set -gx QT_IM_MODULE fcitx
 set -gx XMODIFIERS @im=fcitx
 
 function fish_greeting
-  fastfetch
+  hyfetch
 end
 
 fish_add_path /home/noah/.spicetify
